@@ -21,17 +21,11 @@ $(document).ready(function(){
 
     currentTime();
 
-    function toLocal () {
-    var eventToSave = $(this).prev().val();
-        
-        localStorage.getItem("event", eventToSave);
-    };
-
-    toLocal ();
+     
 
     $(".saveBtn").on("click", function(event) {
         event.preventDefault ();
-
+      
         var eventDescription = $(".eventDescription");
         
         for (var i = 0; i < eventDescription.length; i++) {
@@ -39,6 +33,7 @@ $(document).ready(function(){
             savedEvent.push(eventDescription.val());
             localStorage.setItem("event", savedEvent)
             
+            localStorage.getItem("event", savedEvent);
         }
     })
 
