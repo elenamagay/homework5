@@ -1,6 +1,8 @@
 $(document).ready(function(){
-    $("#currentDate").text(moment().format("MMMM Do YYYY"));
-
+    var today = moment().format("MMMM Do YYYY")
+    $("#currentDate").text(today);
+        
+    console.log(today)
     function currentTime() {
         var realTime = moment().hour()
         $("textarea").each(function (){
@@ -30,11 +32,13 @@ $(document).ready(function(){
         
         for (var i = 0; i < eventDescription.length; i++) {
             var savedEvent = [];
+            var key = $(this).attr("id").val();
+            var value = $(this).attr("id").v
             savedEvent.push(eventDescription.val());
             localStorage.setItem("event", savedEvent)
             
             localStorage.getItem("event", savedEvent);
         }
     })
-
+    
 })

@@ -11,12 +11,12 @@
 
 ## **Deployment**
 ### The website has been deployed on GitHub as 
-https://elenamagay.github.io/homework5/index.html
+https://elenamagay.github.io/homework5/
 
 
 #### Languages
-![Image of HTML badge](https://img.shields.io/badge/HTML-23%25-orange) 
-![Image of CSS badge](https://img.shields.io/badge/CSS-12%25-purple)
-![Image of JavaScript badge](https://img.shields.io/badge/JavaScript-65%25-yellow)
+![Image of HTML badge](https://img.shields.io/badge/HTML-65%25-orange) 
+![Image of CSS badge](https://img.shields.io/badge/CSS-17%25-purple)
+![Image of JavaScript badge](https://img.shields.io/badge/JavaScript-17%25-yellow)
 
 
