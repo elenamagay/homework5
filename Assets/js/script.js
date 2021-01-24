@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var today = moment().format("MMMM Do YYYY")
-    $("#currentDate").text(today);
-        
+    $("#currentDay").text(today);
+   
     console.log(today)
     function currentTime() {
         var realTime = moment().hour()
@@ -33,7 +33,7 @@ $(document).ready(function(){
         for (var i = 0; i < eventDescription.length; i++) {
             var savedEvent = [];
             var key = $(this).attr("id").val();
-            var value = $(this).attr("id").v
+            var val = $(this).attr("id").v
             savedEvent.push(eventDescription.val());
             localStorage.setItem("event", savedEvent)
             
