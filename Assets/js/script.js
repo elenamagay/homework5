@@ -19,11 +19,8 @@ $(document).ready(function(){
                 $(this).addClass("present");
             }    
         })
-    }   
-
+    }
     currentTime();
-
-     
 
     $(".saveBtn").on("click", function(event) {
         event.preventDefault ();
@@ -32,13 +29,49 @@ $(document).ready(function(){
         
         for (var i = 0; i < eventDescription.length; i++) {
             var savedEvent = [];
-            var key = $(this).attr("id").val();
-            var val = $(this).attr("id").v
-            savedEvent.push(eventDescription.val());
-            localStorage.setItem("event", savedEvent)
+            var key = $(this).attr("id");
             
-            localStorage.getItem("event", savedEvent);
+            var val = $(this).siblings(".eventDescription").val();
+            savedEvent.push(eventDescription.val());
+            localStorage.setItem(key, val);
         }
+        // console.log(key);
+        // console.log(val);
     })
+
+    var nineAM = localStorage.getItem("timeblock_9");
+    $("#nineam").text(nineAM);
+    console.log(localStorage.getItem("timeblock_9"));
+
+    var tenAM = localStorage.getItem("timeblock_10");
+    $("#tenam").text(tenAM);
+    console.log(localStorage.getItem("timeblock_10"));
+
+    var elevenAM = localStorage.getItem("timeblock_11");
+    $("#elevenam").text(elevenAM);
+    console.log(localStorage.getItem("timeblock_11"));
+
+    var twelvePM = localStorage.getItem("timeblock_12");
+    $("#twelvepm").text(twelvePM);
+    console.log(localStorage.getItem("timeblock_12"));
+
+    var onePM = localStorage.getItem("timeblock_13");
+    $("#onepm").text(onePM);
+    console.log(localStorage.getItem("timeblock_13"));
+
+    var twoPM = localStorage.getItem("timeblock_14");
+    $("#twopm").text(twoPM);
+    console.log(localStorage.getItem("timeblock_14"));
+
+    var threePM = localStorage.getItem("timeblock_15");
+    $("#threepm").text(threePM);
+    console.log(localStorage.getItem("timeblock_15"));
+
+    var fourPM = localStorage.getItem("timeblock_16");
+    $("#fourpm").text(fourPM);
+    console.log(localStorage.getItem("timeblock_16"));
     
+    var fivePM = localStorage.getItem("timeblock_17");
+    $("#fivepm").text(fivePM);
+    console.log(localStorage.getItem("timeblock_17"));
 })
