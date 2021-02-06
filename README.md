@@ -11,7 +11,7 @@
 
 ## **Deployment**
 ### The website has been deployed on GitHub as 
-https://elenamagay.github.io/homework5/
+https://elenamagay.github.io/homework5/index.html
 
 
 #### Languages
